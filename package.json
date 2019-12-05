@@ -1,0 +1,34 @@
+{
+  "name": "@demo/monorepo",
+  "private": true,
+  "devDependencies": {
+    "@bazel/bazel": "latest",
+    "@bazel/buildifier": "latest",
+    "@bazel/ibazel": "latest",
+    "@bazel/typescript": "latest",
+    "@types/jest": "latest",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "jest-config": "^24.9.0",
+    "jest-haste-map": "^24.9.0",
+    "jest-resolve": "^24.9.0",
+    "jest-runtime": "^24.9.0",
+    "jest-extended": "^0.11.2",
+    "jest-junit": "^8.0.0",
+    "ts-jest": "24.0.2",
+    "ts-morph": "^3.0.0",
+    "ts-node": "8.1.0",
+    "tsc-watch": "2.2.1",
+    "tsconfig-paths": "3.8.0",
+    "tslint": "5.16.0",
+    "jest-reporters": "^0.0.2",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+
+  },
+  "engines": {
+    "node": ">=10.16",
+    "yarn": ">= 1.0"
+  }
+}

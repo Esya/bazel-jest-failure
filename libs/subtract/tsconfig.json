@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig#",
+  "extends": "../../tsconfig",
+  "exclude": ["node_modules", "test", "**/*spec.ts", "dist"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "commonjs",
+    "target": "es2017",
+    "strict": true,
+    "declaration": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "allowJs": false,
+    "incremental": false
+  }
+}

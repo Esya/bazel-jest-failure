@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig#",
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": false,
+    "declaration": true,
+    "esModuleInterop": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "incremental": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "preserveSymlinks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@demo/*": [
+        "*",
+        "apps/*",
+        "libs/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
