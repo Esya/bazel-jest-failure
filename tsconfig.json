@@ -14,11 +14,7 @@
     "preserveSymlinks": true,
     "baseUrl": ".",
     "paths": {
-      "@demo/*": [
-        "*",
-        "apps/*",
-        "libs/*"
-      ]
+      "@demo/*": ["libs/*"] // This mapping is relative to "baseUrl"
     }
   },
   "exclude": [

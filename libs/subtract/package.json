@@ -4,6 +4,6 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-
+    "@demo/add": "latest"
   }
 }
