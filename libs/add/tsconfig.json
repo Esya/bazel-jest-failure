@@ -2,7 +2,6 @@
   "$schema": "http://json.schemastore.org/tsconfig#",
   "extends": "../../tsconfig",
   "compilerOptions": {
-    "baseUrl": "./",
     "module": "commonjs",
     "target": "es2017",
     "strict": true,

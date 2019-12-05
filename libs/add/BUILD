@@ -1,21 +1,23 @@
 package(default_visibility = ["//visibility:public"])
 
-load("@npm_bazel_typescript//:index.bzl", "ts_library", "ts_config")
+load("@npm_bazel_typescript//:index.bzl", "ts_config", "ts_library")
+load("@build_bazel_rules_nodejs//:defs.bzl", "nodejs_binary")
 load("//:jest.bzl", "jest_test")
 
 ts_config(
     name = "tsconfig",
     src = ":tsconfig.json",
-    deps = ["//:tsconfig.json"]
+    deps = ["//:tsconfig.json"],
 )
 
 ts_library(
     name = "add",
-    tsconfig = ":tsconfig",
     srcs = glob(["**/*.ts"]),
     module_name = "@demo/add",
+    tsconfig = ":tsconfig",
     deps = [
-      "@npm//@types/jest"
+        "@npm//@types/jest",
+        "@npm//@types/node",
     ],
 )
 
@@ -37,6 +39,16 @@ jest_test(
         "no-bazelci-windows",
     ],
     deps = [
-		    "@npm//:node_modules"
+        "@npm//:node_modules",
     ],
+)
+
+nodejs_binary(
+    name = "manual",
+    bootstrap = ["source-map-support/register"],
+    data = [
+        ":add",
+        "@npm//source-map-support",
+    ],
+    entry_point = ":src/manual.ts",
 )
