@@ -22,7 +22,7 @@
     "tsconfig-paths": "3.8.0",
     "tslint": "5.16.0",
     "jest-reporters": "^0.0.2",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "scripts": {
 
